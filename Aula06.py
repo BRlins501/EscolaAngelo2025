@@ -1,0 +1,15 @@
+var1 = 18 
+
+if var1 >= 18:
+ var2 = var1 + 4
+ print("pode tirar habilitação")
+
+print("isto sempre será impresso")  
+
+
+var1 = 14
+if var1 > 15:
+ print("pode votar")
+else:
+ print ("não pode votar")
+ 
