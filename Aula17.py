@@ -15,7 +15,7 @@ print(lista_nomes)
 lista_numerica.append(9)
 print(lista_numerica)
 
-print(lista_nomes[21])
+print(lista_nomes[2]) 
 
 print(lista_numerica[-2])
 
