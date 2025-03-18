@@ -3,6 +3,11 @@
 # maior que 20. Se for, imprima "Maior que 20"  
 # se não for, imprima "Menor que 20" 
 
+n1 = 5
+n2 = 18
 
-var1 = 15
-var2 = 25
+# soma = n1 = n2
+if n1 + n2 > 20:
+    print("maior que 20")
+else:
+    print("menor que 20")
