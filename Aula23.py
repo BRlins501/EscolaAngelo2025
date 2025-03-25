@@ -9,29 +9,29 @@ while i < len(lista_numeros):
 
 print()
 for elemento in lista_numeros:
- print(elemento, end= " ")
+    print(elemento, end= " ")
 
 print()
 i = 0
 for el in lista_numeros:
- print(f"Indice = {i}, elemento = {el}")
- i += 1
+    print(f"Indice = {i}, elemento = {el}")
+    i += 1
 
 for elemento in enumerate(lista_numeros):
- print(elemento)
+    print(elemento)
 
- for indice,  elemento in enumerate(lista_numeros):
-    print("Indice:", indice, "Elemento", elemento)
+    for indice,  elemento in enumerate(lista_numeros):
+        print("Indice:", indice, "Elemento", elemento)
 
 for numero in range(9):
- print(numero)
+    print(numero)
 
 for numero in range(1, 9):
- print(numero)
+    print(numero)
 
 print()
 for numero in range(1, 9, 2):
- print(numero)
+    print(numero)
 
 print()
 lista_com_range = list(range(1, 11))
