@@ -52,3 +52,15 @@ print(texto)
 
 texto = texto.title()
 print(texto)
+
+texto = texto.replace(" De ", " de")
+print(texto)
+
+texto = "Aula de " + texto
+print(texto)
+
+texto = texto.replace("Aula de ","Curso ")
+print(texto)
+
+texto = texto.replace("Curso ","Curso de ")
+print(texto)
