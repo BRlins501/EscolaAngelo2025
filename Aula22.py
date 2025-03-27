@@ -4,83 +4,78 @@
 #  • Criem uma lista com 10 números.
 #  • Peçam ao usuário para adivinhar um número da lista.
 #  • Usem um loop while para continuar pedindo adivinhações até que o usuário acerte.
-numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-acertou = False
-while not acertou:
-    palpite = int(input("Adivinhe um número da lista: "))
-    if palpite in numeros:
-        print("Parabéns! Você acertou o número.")
-        acertou = True
-    else:
-        print("Não foi dessa vez. Tente novamente!")
+
+numeros = [21, 8, 30, 12, 7, 9, 16, 3, 11, 4]
+while True:
+  numero = int(input("Digite um numero: "))
+  if numero in numeros:
+    print("Adivinhou!")
+    break
 
 #  2. Contagem regressiva:
 #  • Criem uma lista de contagem regressiva de 10 a 1.
 #  • Usem um loop while para imprimir cada número da lista
-contagem_regressiva = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-i = 0 
-while i < len(contagem_regressiva):
-    print(contagem_regressiva[i])
-    i += 1  
+
+contagem = list(range(1, 11))
+i = 9
+while i >= 0:
+  print(contagem[i])
+  i -= 1
 
 # 3. Adição de números:
 #  • Criem uma lista vazia para armazenar números.
 #  • Peçam ao usuário para fornecer números e os adicionem à lista.
 #  • Continuem pedindo números até que o usuário decida parar.
-numeros = []
+
+lista1 = []
 while True:
-    entrada = input("Digite um número para adicionar à lista ou 'parar' para encerrar: ")
-    if entrada.lower() == 'parar':
-        break
-    try:
-        numero = float(entrada) 
-        numeros.append(numero) 
-    except ValueError:
-        print("Por favor, digite um número válido ou 'parar' para encerrar.")
-print("Os números adicionados foram:", numeros)
+  numero = int(input("Digite um número ou 0 para parar: "))
+  if numero == 0: 
+    break
+  lista1.append(numero)
+
+print(lista1)
 
 #  4.Média de notas:
 #  • Criem uma lista vazia para armazenar notas.
 #  • Peçam ao usuário para fornecer notas e as adicionem à lista.
 #  • Calculem e imprimam a média das notas quando o usuário decidir parar
+
 notas = []
 while True:
-    entrada = input("Digite uma nota ou 'parar' para encerrar: ")
-    if entrada.lower() == 'parar':
-        break
-    if entrada.isdigit():  
-        nota = int(entrada) 
-        notas.append(nota)  
-    else:
-        print("Por favor, digite uma nota válida ou 'parar' para encerrar.")
-if len(notas) > 0:
-    media = sum(notas) / len(notas)  
-    print(f"A média das notas é: {media:.2f}") 
-    print("Nenhuma nota foi fornecida.")
+  nota = float(input("Digite uma nota ou 0 para sair: "))
+  if nota == 0:
+    break
+  notas.append(nota)
+
+media = sum(notas) / len(notas)
+print(f"Média: {media:.1f}")
 
 # 5.Busca em lista:
 #  • Criem uma lista de cinco nomes.
 #  • Peçam ao usuário para digitar um nome.
-#  • Usem um loop while para verificar se o nome está na 
-# lista e informar o resultado.
-nomes = ["Ana", "Carlos", "João", "Maria", "Pedro"]
-while True:
-    nome_usuario = input("Digite um nome para procurar na lista: ")
-    if nome_usuario.lower() in [nome.lower() for nome in nomes]:
-        print(f"O nome {nome_usuario} está na lista!")
-        break
-    else:
-        print(f"O nome {nome_usuario} não está na lista. Tente novamente.")
+#  • Usem um loop while para verificar se o nome está na lista e informar o resultado.
+
+nomes = ["Edson", "Sandra", "Tamires", "Tales", "Sofia"]
+nome = input("Digite um nome: ")
+i = 0
+while i < len(nomes):
+  if nome.capitalize() == nomes[i]:
+    msg ="Nome encontrado na lista"
+    break
+  else:
+    msg = "Nome não encontrado"
+  i += 1
+
+print(msg)
 
 #  6. Contador de números:
 #  • Solicitem ao usuário um número inicial.
-#  • Usem um loop while para imprimir os números de 1 até o 
-# número fornecido pelo usuário.
+#  • Usem um loop while para imprimir os números de 1 até o número fornecido pelo usuário.
 #  • Exibam uma mensagem indicando que o loop terminou
-# Solicitar um número inicial ao usuário
-numero_final = int(input("Digite um número para contar até ele: "))
-contador = 1
-while contador <= numero_final:
-    print(contador)
-    contador += 1 
-print("Número encontrado!")
+
+numero = int(input("Digite um número: "))
+i = 1
+while i <= numero:
+  print(i, end=" ")
+  i += 1
