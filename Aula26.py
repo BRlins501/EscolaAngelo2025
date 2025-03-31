@@ -15,7 +15,7 @@ print(f"Seu nome completo tem {caracteres} caracteres")
 sobrenome = input("Digite um sobrenome para procurar no seu nome completo: ")
 
 #  e) Verifique se o sobrenome fornecido está presente no nome completo e exiba uma mensagem apropriada.
-if sobrenome in nome_completo:
+if sobrenome in nome_completo.lower():
   print(f"O sobrenome {sobrenome} está presente no nome completo.")
 else:
   print(f"O sobrenome {sobrenome} não esta presente no nome completo.")
