@@ -5,3 +5,5 @@ while numero <= 100:
     print(numero, end = " ")
     numero += 1
 
+
+

@@ -17,4 +17,3 @@ Angelo = "nova escola"
 Escola = Angelo
 
 # print (Angelo)
-

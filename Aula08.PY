@@ -8,4 +8,3 @@ if var1 > var2:
     print(var1)
 else:
     print(var2)
-    

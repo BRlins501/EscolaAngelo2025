@@ -10,3 +10,5 @@ if numero % 2 ==0:
     print("O número maior par")
 else: 
     print("O maior é impar")
+
+

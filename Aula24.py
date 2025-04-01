@@ -59,3 +59,6 @@ lista_ordenada = sorted(lista, reverse=True)
 
 # Imprima os três primeiros elementos da lista ordenada
 print("Os três maiores numeros da lista são:", lista_ordenada[:3])
+
+
+

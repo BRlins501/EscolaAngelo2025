@@ -9,7 +9,7 @@ else:
         else:
            print("Você não digitou 50")
     else:
-     print("O valor é impar")
+      print("O valor é impar")
 
 
  

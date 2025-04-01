@@ -64,3 +64,6 @@ print(texto)
 
 texto = texto.replace("Curso ","Curso de ")
 print(texto)
+
+
+

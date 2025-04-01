@@ -40,23 +40,26 @@ else:
 
 idade = int(input("Digite a idade maior que 0 menor 150: "))
 if idade > 0 and idade < 150:
- print("idade válida")
+    print("idade válida")
 else:
- print("idade inválida")
+    print("idade inválida")
 
 Salário = int(input("Digite o salário: R$ "))
 if Salário > 0:
- print(f"O salário é R$ {Salário}")
+    print(f"O salário é R$ {Salário}")
 else:
- print("Salário inválido")
+    print("Salário inválido")
 
 sexo = input("Digite o sexo [M, F, outro]: ")
 if sexo.upper == "M":
- print("Sexo masculino")
+    print("Sexo masculino")
 elif sexo.upper == "F":
- print("Sexo feminino.")
+    print("Sexo feminino.")
 elif sexo.lower == "outro":
- print("Sexo outro")
+    print("Sexo outro")
 else:
- print("Sexo inválido")
+    print("Sexo inválido")
+ 
+
+
  

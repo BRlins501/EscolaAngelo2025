@@ -26,3 +26,4 @@ print("Seu nome completo em letras minusculas é", nome_completo.upper())
 #  g) Substitua todas as ocorrências da vogal “a” na string do nome completo pelo caractere ‘4’ e exiba o resultado
 nome_completo = nome_completo.replace("a", "4")
 print("Nome completo com 'a'  substituidopor '4': ", nome_completo)
+
