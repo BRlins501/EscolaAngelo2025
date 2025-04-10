@@ -27,4 +27,3 @@ for item in conjunto:
     print(item)
 
 
-conjunto.
